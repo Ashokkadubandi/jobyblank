@@ -1,0 +1,64 @@
+.mobile-home-header {
+  background-color: #2c364c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  min-width: 120px;
+}
+@media (min-width: 576px) {
+  .mobile-home-header {
+    display: none;
+  }
+}
+
+.mobile-nav-logo {
+  height: 40px;
+  width: 100px;
+}
+
+.font-container {
+  min-width: 150px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.responsive-container {
+  background-color: #2c364c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+@media (max-width: 576px) {
+  .responsive-container {
+    display: none;
+  }
+}
+.text {
+  text-decoration: none;
+  font-family: roboto;
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  padding: 10px;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+.logout {
+  background: #64748b;
+  height: 32px;
+  width: 100px;
+  color: #ffffff;
+  border-radius: 5px;
+  border-width: 0px;
+  cursor: pointer;
+}

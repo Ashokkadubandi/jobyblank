@@ -1,0 +1,14 @@
+/* .jobs-container {
+  background-color: #121212;
+  max-width: 550px;
+}
+@media (min-width: 576px) {
+  .jobs-container {
+    padding-bottom: 50px;
+  }
+} */
+.bottom-container {
+  background-color: #121212;
+  width: 100vw;
+  background: #121212;
+}
