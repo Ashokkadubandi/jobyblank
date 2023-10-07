@@ -16,16 +16,14 @@
   width: 100%;
 }
 .search-inp {
-  width: 30%;
-  border: 1px solid #ffffff;
+  width: 100%;
+  border-width: 0px;
   background: transparent;
   padding-left: 8px;
   border-radius: 10px;
-  height: 35px;
+  height: 100%;
   font-family: Roboto;
   color: #ffffff;
-  margin-left: 20px;
-  margin-top: 20px;
 }
 .profile-filters {
   display: flex;
@@ -61,4 +59,27 @@
 .no-data-image {
   height: 300px;
   width: 300px;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffffff;
+  max-width: 300px;
+  height: 30px;
+  margin-top: 15px;
+}
+@media (min-width: 576px) {
+  .input-container {
+    min-width: 520px;
+    height: 35px;
+  }
+}
+.search-btn {
+  background-color: grey;
+  border-width: 0px;
+  color: #ffffff;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  height: 100%;
 }

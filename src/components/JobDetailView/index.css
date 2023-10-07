@@ -1,3 +1,6 @@
+.text {
+  text-decoration: none;
+}
 .jobs-container-list {
   display: flex;
   flex-direction: column;
@@ -85,10 +88,22 @@
     font-size: 30px;
   }
 }
+
+.locate-package-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .add-container {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  width: 200px;
+}
+@media (min-width: 576px) {
+  .add-container {
+    min-width: 400px;
+  }
 }
 /* Hex: #64748b
 Hex: #4f46e5
@@ -110,15 +125,33 @@ Hex: #ff0b37 */
 
 .address {
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 13px;
   color: #b6b9bd;
-  padding-right: 20px;
+  padding-right: 15px;
   font-weight: 450;
+}
+@media (min-width: 576px) {
+  .address {
+    font-size: 23px;
+    padding-left: 5px;
+  }
 }
 .add-font {
   color: #ffffff;
-  padding-right: 8px;
-  font-size: 28px;
+  font-size: 20px;
+  padding-right: 5px;
+}
+@media (min-width: 576px) {
+  .add-font {
+    font-size: 28px;
+  }
+}
+.package {
+  font-family: Roboto;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  padding-right: 10px;
 }
 .horizon {
   background-color: #32344b;

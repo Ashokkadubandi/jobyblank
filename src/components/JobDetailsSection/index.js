@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
+import {IoSearch} from 'react-icons/io5'
 import Cookies from 'js-cookie'
 import Profile from '../ProfileDetails'
 import Filter from '../JobFilters'
@@ -205,15 +206,25 @@ class JobDetails extends Component {
           <Profile />
           {this.applyFilters()}
         </div>
-        {/* Render Job Details here */}
+
         <div className="job-search-con">
-          <input
-            type="text"
-            className="search-inp"
-            value={searchValue}
-            onChange={this.changeSearch}
-            onKeyDown={this.enterEventTrigger}
-          />
+          <div className="input-container">
+            <input
+              type="text"
+              className="search-inp"
+              value={searchValue}
+              onChange={this.changeSearch}
+              onKeyDown={this.enterEventTrigger}
+              placeholder="Search"
+            />
+            <button
+              type="button"
+              data-testid="searchButton"
+              className="search-btn"
+            >
+              <IoSearch className="search-icon" />
+            </button>
+          </div>
 
           {this.renderApiStatus()}
         </div>

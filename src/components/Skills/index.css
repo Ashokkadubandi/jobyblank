@@ -1,0 +1,35 @@
+.skills-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 120px;
+}
+@media (min-width: 576px) {
+  .skills-card {
+    width: 250px;
+    margin-bottom: 30px;
+  }
+}
+
+.skills-img {
+  height: 28px;
+  width: 28px;
+}
+@media (min-width: 576px) {
+  .skills-img {
+    height: 50px;
+    width: 50px;
+  }
+}
+.skills-name {
+  font-family: Roboto;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 576px) {
+  .skills-name {
+    font-size: 23px;
+  }
+}
